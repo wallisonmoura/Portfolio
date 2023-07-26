@@ -1,5 +1,9 @@
+import { Jost } from 'next/font/google'
+
 import { Footer, NavBar } from '@/components'
 import './globals.css'
+
+const jost = Jost({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Wallison Moura',
@@ -13,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-Br">
-      <body className="relative">
+      <body className={jost.className}>
         <NavBar />
         {children}
         <Footer />

@@ -1,7 +1,13 @@
-export default function Home() {
+import { Contact, Experience, Home, Projects, Skills } from '@/components'
+
+export default function Page() {
   return (
-    <main className="flex bg-slate-600 min-h-screen flex-col items-center justify-between p-24">
-      <h1>Simbora desenvolver o portfolio</h1>
+    <main className="flex flex-col w-full h-full">
+      <Home />
+      <Experience />
+      <Skills />
+      <Projects />
+      <Contact />
     </main>
   )
 }
