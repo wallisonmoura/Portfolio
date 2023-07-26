@@ -18,9 +18,9 @@ export default function RootLayout({
   return (
     <html lang="pt-Br">
       <body className={jost.className}>
-        <NavBar />
+        {/* <NavBar /> */}
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   )

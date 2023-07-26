@@ -2,9 +2,12 @@ import Image from 'next/image'
 
 const Home = () => {
   return (
-    <section id="section-about" className="justify-between">
-      <div className="flex flex-col gap-2 justify-center items-center w-1/3">
-        <div className="flex relative items-center w-52 h-52 border-4 border-double border-purple-700 rounded-full overflow-hidden">
+    <section
+      id="section-about"
+      className="flex-col lg:flex-row lg:justify-between pt-4 lg:pt-0"
+    >
+      <div className="flex flex-col justify-center items-center">
+        <div className="flex relative items-center w-52 h-52 border-4 mb-4 border-double border-purple-700 rounded-lg lg:rounded-full overflow-hidden">
           <Image
             src="/perfil.jpeg"
             alt="logo"
@@ -13,15 +16,17 @@ const Home = () => {
             className="absolute object-contain w-auto"
           />
         </div>
-        <span className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#691AEA] to-[#6C0957]">
+        <span className="text-3xl lg:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#691AEA] to-[#6C0957]">
           Wallison Moura
         </span>
-        <p className="flex text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#691AEA] to-[#6C0957]">
+        <p className="flex text-xl lg:text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#691AEA] to-[#6C0957]">
           Desenvolvedor FullStack
         </p>
       </div>
-      <div className="flex flex-col w-2/3 h-full justify-center items-center p-10 gap-4">
-        <h2 className="text-4xl font-extrabold text-[#691AEA]">Sobre mim</h2>
+      <div className="flex flex-col w-full lg:w-2/3 h-full justify-center items-center p-10 gap-4">
+        <h2 className="text-3xl lg:text-4xl font-extrabold text-[#691AEA]">
+          Sobre mim
+        </h2>
         <div className="bg-gradient-to-r from-[#691AEA] to-[#6C0957] rounded-lg p-4">
           <p className="text-white">
             Apaixonado por programação / desenvolvimento de sistema desde 2018,
