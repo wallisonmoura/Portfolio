@@ -24,7 +24,7 @@ const Home = () => {
         </p>
       </div>
       <div className="flex flex-col w-full lg:w-2/3 h-full justify-center items-center p-10 gap-4">
-        <h2 className="text-3xl lg:text-4xl font-extrabold text-[#691AEA]">
+        <h2 className="text-3xl lg:text-4xl font-extrabold text-[#691AEA] border-b-2 border-[#691AEA]">
           Sobre mim
         </h2>
         <div className="bg-gradient-to-r from-[#691AEA] to-[#6C0957] rounded-lg p-4">
