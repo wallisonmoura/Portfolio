@@ -1,3 +1,4 @@
+import Card from './Card'
 import Contact from './Contact'
 import CustomLink from './CustomLink'
 import Experience from './Experience'
@@ -15,5 +16,6 @@ export {
   Skills,
   CustomLink,
   Projects,
-  Contact
+  Contact,
+  Card
 }

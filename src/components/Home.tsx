@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <section
       id="section-about"
-      className="flex-col lg:flex-row lg:justify-between pt-4 lg:pt-0"
+      className="flex-col lg:h-screen lg:flex-row lg:justify-between pt-4 lg:pt-0"
     >
       <div className="flex flex-col justify-center items-center">
         <div className="flex relative items-center w-52 h-52 border-4 mb-4 border-double border-purple-700 rounded-lg lg:rounded-full overflow-hidden">

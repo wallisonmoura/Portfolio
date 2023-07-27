@@ -2,7 +2,7 @@ const Experience = () => {
   return (
     <section
       id="section-experience"
-      className="flex-col gap-8 justify-center py-4 lg:pt-0"
+      className="flex-col lg:h-screen gap-8 justify-center py-4 lg:pt-0"
     >
       <h1 className="text-3xl lg:text-4xl font-extrabold text-[#691AEA] border-b-2 border-[#691AEA]">
         Experiência Profissional
