@@ -41,10 +41,6 @@ const Footer = () => {
               Github
             </a>
           </li>
-
-          <li className="flex items-center gap-1 hover:text-[#f8f8f8]">
-            <a href="mailto:wallisonmoura.dev@gmail.com">Email</a>
-          </li>
         </ul>
       </div>
       <div className="mt-4">

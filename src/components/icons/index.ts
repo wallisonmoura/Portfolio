@@ -1,6 +1,9 @@
+import AboutIcon from './about-icon'
+import ContactIcon from './contact-icon'
 import CssIcon from './css-icon'
 import CypressIcon from './cypress-icon'
 import DockerIcon from './docker-icon'
+import ExperienceIcon from './experience-icon'
 import FigmaIcon from './figma'
 import GitIcon from './git-icon'
 import GithubIcon from './github-icon'
@@ -15,8 +18,10 @@ import NextjsIcon from './nextjs-icon'
 import NodeIcon from './nodejs-icon'
 import NpmIcon from './npm-icon'
 import PostgreSQLIcon from './postgresql-icon'
+import ProjectIcon from './project-icon'
 import ReactIcon from './react-icon'
 import ReduxIcon from './redux-icon'
+import SkillIcon from './skills-icon'
 import StyledComponentIcon from './styled-components-icon'
 import TailwindIcon from './tailwind-icon'
 import TypescriptIcon from './typescript-icon'
@@ -43,5 +48,10 @@ export {
   MongoDBIcon,
   MySQLIcon,
   PostgreSQLIcon,
-  ReduxIcon
+  ReduxIcon,
+  AboutIcon,
+  SkillIcon,
+  ProjectIcon,
+  ExperienceIcon,
+  ContactIcon
 }

@@ -19,6 +19,7 @@ import {
   PostgreSQLIcon,
   ReactIcon,
   ReduxIcon,
+  SkillIcon,
   StyledComponentIcon,
   TailwindIcon,
   TypescriptIcon
@@ -30,9 +31,12 @@ const Skills = () => {
       id="section-skills"
       className="flex-col items-center justify-center h-full gap-8 py-4"
     >
-      <h1 className="text-4xl font-extrabold text-[#691AEA] border-b-2 border-[#691AEA]">
-        Habilidades
-      </h1>
+      <div className="flex border-b-2 border-[#691AEA] gap-4">
+        <SkillIcon />
+        <h2 className="text-3xl lg:text-4xl font-extrabold text-[#691AEA] ">
+          Habilidades
+        </h2>
+      </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-7 gap-4 justify-center text-center py-8">
         <Card>
           <HtmlIcon />

@@ -1,12 +1,17 @@
+import { ExperienceIcon } from './icons'
+
 const Experience = () => {
   return (
     <section
       id="section-experience"
       className="flex-col lg:h-screen gap-8 justify-center py-4 lg:pt-0"
     >
-      <h1 className="text-3xl lg:text-4xl font-extrabold text-[#691AEA] border-b-2 border-[#691AEA]">
-        Experiência Profissional
-      </h1>
+      <div className="flex border-b-2 border-[#691AEA] gap-4">
+        <ExperienceIcon />
+        <h2 className="text-3xl lg:text-4xl font-extrabold text-[#691AEA] ">
+          Experiência Profissional
+        </h2>
+      </div>
       <div className="flex flex-col text-white bg-gradient-to-r from-[#691AEA] to-[#6C0957] rounded-lg p-4 w-3/4 gap-2">
         <div className="font-semibold">
           <p className="text-white">
