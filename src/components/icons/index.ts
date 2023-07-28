@@ -12,6 +12,7 @@ import HtmlIcon from './html-icon'
 import JavascriptIcon from './javascript-icon'
 import JestIcon from './jest-icon'
 import MuiIcon from './materialui-icon'
+import MenuIcon from './menu-icon'
 import MongoDBIcon from './mongodb-icon'
 import MySQLIcon from './mysql-icon'
 import NextjsIcon from './nextjs-icon'
@@ -25,6 +26,7 @@ import SkillIcon from './skills-icon'
 import StyledComponentIcon from './styled-components-icon'
 import TailwindIcon from './tailwind-icon'
 import TypescriptIcon from './typescript-icon'
+import XIcon from './x-icon'
 
 export {
   HtmlIcon,
@@ -53,5 +55,7 @@ export {
   SkillIcon,
   ProjectIcon,
   ExperienceIcon,
-  ContactIcon
+  ContactIcon,
+  MenuIcon,
+  XIcon
 }

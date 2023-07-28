@@ -43,7 +43,6 @@ const Contact = () => {
       },
       body: JSON.stringify(formData)
     }).then((response) => {
-      // Aqui você pode lidar com a resposta da solicitação POST
       if (response.ok) {
         // A resposta foi bem-sucedida
         console.log('Formulário enviado com sucesso!')
