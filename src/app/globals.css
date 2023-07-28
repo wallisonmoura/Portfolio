@@ -13,7 +13,14 @@ body {
 }
 
 @layer base {
+  main {
+    @apply flex flex-col items-center w-full h-full lg:px-16
+  }
   section {
     @apply flex w-full lg:h-screen items-center border-b-2
+  }
+
+  h2 {
+    @apply text-3xl lg:text-4xl font-extrabold text-[#691AEA]
   }
 }

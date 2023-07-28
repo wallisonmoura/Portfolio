@@ -2,7 +2,7 @@ import { Contact, Experience, Home, Projects, Skills } from '@/components'
 
 export default function Page() {
   return (
-    <main className="flex flex-col items-center w-full h-full lg:px-16">
+    <main>
       <Home />
       <Experience />
       <Skills />

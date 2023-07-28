@@ -5,6 +5,7 @@ import CypressIcon from './cypress-icon'
 import DockerIcon from './docker-icon'
 import ExperienceIcon from './experience-icon'
 import FigmaIcon from './figma'
+import FlagIcon from './flag-icon'
 import GitIcon from './git-icon'
 import GithubIcon from './github-icon'
 import GitlabIcon from './gitlab-icon'
@@ -57,5 +58,6 @@ export {
   ExperienceIcon,
   ContactIcon,
   MenuIcon,
-  XIcon
+  XIcon,
+  FlagIcon
 }

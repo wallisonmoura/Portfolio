@@ -60,9 +60,7 @@ const Contact = () => {
     >
       <div className="flex border-b-2 border-[#691AEA] gap-2">
         <ContactIcon />
-        <h2 className="text-3xl lg:text-4xl font-extrabold text-[#691AEA] ">
-          Contato
-        </h2>
+        <h2>Contato</h2>
       </div>
 
       <form

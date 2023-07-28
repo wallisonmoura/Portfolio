@@ -28,9 +28,7 @@ const Home = () => {
       <div className="flex flex-col w-full lg:w-2/3 h-full justify-center items-center p-10 gap-4">
         <div className="flex border-b-2 border-[#691AEA] gap-4">
           <AboutIcon />
-          <h2 className="text-3xl lg:text-4xl font-extrabold text-[#691AEA] ">
-            Sobre mim
-          </h2>
+          <h2>Sobre mim</h2>
         </div>
 
         <div className="bg-gradient-to-r from-[#691AEA] to-[#6C0957] rounded-lg p-4">
