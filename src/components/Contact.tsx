@@ -1,5 +1,6 @@
 'use client'
 import { useForm } from 'react-hook-form'
+import { toast } from 'react-toastify'
 
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
@@ -25,6 +26,7 @@ const Contact = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors }
   } = useForm({
     resolver: yupResolver(schema)
@@ -44,11 +46,16 @@ const Contact = () => {
       body: JSON.stringify(formData)
     }).then((response) => {
       if (response.ok) {
-        // A resposta foi bem-sucedida
-        console.log('Formulário enviado com sucesso!')
+        toast.success('Formulário enviado com sucesso', {
+          position: toast.POSITION.TOP_CENTER,
+          autoClose: 3000
+        })
+        reset()
       } else {
-        // A resposta não foi bem-sucedida
-        console.error('Houve um problema ao enviar o formulário.')
+        toast.error('Houve um problema ao enviar o formulário.', {
+          position: toast.POSITION.TOP_CENTER,
+          autoClose: 3000
+        })
       }
     })
   }
