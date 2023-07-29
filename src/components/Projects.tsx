@@ -4,6 +4,7 @@ import { FlagIcon, ProjectIcon } from './icons'
 type RepoProps = {
   id: number
   name: string
+  html_url: string
   description: string
   topics: []
 }
@@ -35,25 +36,29 @@ export default async function Projects() {
           .filter((repo: RepoProps) => reposToRender.includes(repo.name))
           .map((repo: RepoProps) => (
             <div key={repo.id}>
-              <Card containerStyle="w-full md:h-full justify-between text-white">
-                <div className="flex gap-4 items-center pl-2">
-                  <FlagIcon />
-                  <p className="flex flex-wrap font-bold text-xl">
-                    {repo.name}
-                  </p>
-                </div>
-                <p className="flex w-full text-left p-2">{repo.description}</p>
-                <div className="flex flex-wrap gap-2 p-2">
-                  {repo.topics.map((topic) => (
-                    <p
-                      key={topic}
-                      className="bg-[#460ca3] opacity-70 rounded-lg p-2 text-xs"
-                    >
-                      {topic}
+              <a href={repo.html_url} rel="noreferrer" target="_blank">
+                <Card containerStyle="w-full md:h-full justify-between text-white">
+                  <div className="flex gap-4 items-center pl-2">
+                    <FlagIcon />
+                    <p className="flex flex-wrap font-bold text-xl">
+                      {repo.name}
                     </p>
-                  ))}
-                </div>
-              </Card>
+                  </div>
+                  <p className="flex w-full text-left p-2">
+                    {repo.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2 p-2">
+                    {repo.topics.map((topic) => (
+                      <p
+                        key={topic}
+                        className="bg-[#460ca3] opacity-70 rounded-lg p-2 text-xs"
+                      >
+                        {topic}
+                      </p>
+                    ))}
+                  </div>
+                </Card>
+              </a>
             </div>
           ))}
       </div>

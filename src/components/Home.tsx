@@ -18,10 +18,10 @@ const Home = () => {
             className="absolute object-contain w-auto"
           />
         </div>
-        <span className="text-3xl lg:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#691AEA] to-[#6C0957]">
+        <span className="text-3xl lg:text-4xl font-extrabold text-[#691AEA]">
           Wallison Moura
         </span>
-        <p className="flex text-xl lg:text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#691AEA] to-[#6C0957]">
+        <p className="flex text-xl lg:text-2xl font-semibold text-[#691AEA]">
           Desenvolvedor FullStack
         </p>
       </div>

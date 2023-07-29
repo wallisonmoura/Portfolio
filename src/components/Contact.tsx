@@ -56,7 +56,7 @@ const Contact = () => {
   return (
     <section
       id="section-contact"
-      className="flex-col lg:h-screen gap-4 justify-center py-4 lg:pt-0"
+      className="flex-col lg:h-screen gap-4 justify-center py-4 lg:pt-0 border-none"
     >
       <div className="flex border-b-2 border-[#691AEA] gap-2">
         <ContactIcon />
