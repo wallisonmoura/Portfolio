@@ -65,7 +65,7 @@ const Contact = () => {
       id="section-contact"
       className="flex-col lg:h-screen gap-4 justify-center py-4 lg:pt-0 border-none"
     >
-      <div className="flex border-b-2 border-[#691AEA] gap-2">
+      <div className="flex border-b-2 border-blue-700 gap-4 drop-shadow-white-sm">
         <ContactIcon />
         <h2>Contato</h2>
       </div>
@@ -79,7 +79,7 @@ const Contact = () => {
           <a
             href="mailto:wallisonmoura.dev@gmail.com"
             target="_blank"
-            className="text-gray-500 hover:text-[#691AEA]"
+            className="text-gray-500 hover:text-blue-700"
             rel="noreferrer"
           >
             wallisonmoura.dev@gmail.com
@@ -110,7 +110,7 @@ const Contact = () => {
         {!!errors && <p className="text-red-500">{errors.message?.message}</p>}
         <button
           type="submit"
-          className="text-white border-2 hover:bg-[#691AEA] hover:border-[#691AEA] font-medium px-6 py-3 mx-auto ml-0 flex items-center rounded-md duration-700"
+          className="text-white border-2 hover:bg-blue-700 hover:border-blue-700 font-medium px-6 py-3 mx-auto ml-0 flex items-center rounded-md duration-700"
         >
           Enviar
         </button>

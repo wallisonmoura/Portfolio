@@ -21,6 +21,6 @@ body {
   }
 
   h2 {
-    @apply text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#691AEA]
+    @apply text-2xl md:text-3xl lg:text-4xl font-extrabold text-blue-700
   }
 }

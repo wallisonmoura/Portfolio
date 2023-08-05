@@ -6,11 +6,11 @@ const Experience = () => {
       id="section-experience"
       className="flex-col lg:h-screen gap-8 justify-center py-4 lg:pt-0"
     >
-      <div className="flex border-b-2 border-[#691AEA] gap-4">
+      <div className="flex border-b-2  border-blue-700 gap-4 drop-shadow-white-sm">
         <ExperienceIcon />
         <h2>Experiência Profissional</h2>
       </div>
-      <div className="flex flex-col text-white bg-gradient-to-r from-[#691AEA] to-[#6C0957] rounded-lg p-4 w-3/4 gap-2">
+      <div className="flex flex-col text-white bg-gradient-to-r from-blue-700 to-fuchsia-800 rounded-lg p-4 w-3/4 gap-2 drop-shadow-blue-md">
         <div className="font-semibold">
           <p className="text-white">
             Desenvolvedor Full Stack Pleno na Transformatio Technology Eireli -

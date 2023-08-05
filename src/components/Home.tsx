@@ -9,7 +9,7 @@ const Home = () => {
       className="flex-col lg:h-screen lg:flex-row lg:justify-between pt-4 lg:pt-0"
     >
       <div className="flex flex-col justify-center items-center">
-        <div className="flex relative items-center w-52 h-52 border-4 mb-4 border-double border-purple-700 rounded-lg lg:rounded-full overflow-hidden">
+        <div className="flex relative items-center w-52 h-52 border-4 mb-4 border-double border-blue-700  rounded-lg lg:rounded-full overflow-hidden">
           <Image
             src="/perfil.jpeg"
             alt="logo"
@@ -18,20 +18,20 @@ const Home = () => {
             className="absolute object-contain w-auto"
           />
         </div>
-        <span className="text-3xl lg:text-4xl font-extrabold text-[#691AEA]">
+        <p className="text-3xl lg:text-4xl font-extrabold text-blue-700 drop-shadow-white-sm">
           Wallison Moura
-        </span>
-        <p className="flex text-xl lg:text-2xl font-semibold text-[#691AEA]">
+        </p>
+        <p className="flex text-xl lg:text-2xl font-semibold text-blue-700 drop-shadow-white-sm">
           Desenvolvedor FullStack
         </p>
       </div>
       <div className="flex flex-col w-full lg:w-2/3 h-full justify-center items-center p-10 gap-4">
-        <div className="flex border-b-2 border-[#691AEA] gap-4">
+        <div className="flex border-b-2 border-blue-700 gap-4 drop-shadow-white-sm">
           <AboutIcon />
           <h2>Sobre mim</h2>
         </div>
 
-        <div className="bg-gradient-to-r from-[#691AEA] to-[#6C0957] rounded-lg p-4">
+        <div className="bg-gradient-to-r from-blue-700 to-fuchsia-800 rounded-lg p-4 drop-shadow-blue-md">
           <p className="text-white">
             Apaixonado por programação / desenvolvimento de sistema desde 2018,
             formado em Análise e Desenvolvimento de Sistemas pela Faculdade

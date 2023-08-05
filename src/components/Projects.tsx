@@ -27,7 +27,7 @@ export default async function Projects() {
       id="section-projects"
       className="flex-col items-center justify-center h-full gap-8 py-4"
     >
-      <div className="flex border-b-2 border-[#691AEA] gap-4">
+      <div className="flex border-b-2 border-blue-700 gap-4 drop-shadow-white-sm">
         <ProjectIcon />
         <h2>Projetos</h2>
       </div>

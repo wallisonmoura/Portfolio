@@ -31,7 +31,7 @@ const Skills = () => {
       id="section-skills"
       className="flex-col items-center justify-center h-full gap-8 py-4"
     >
-      <div className="flex border-b-2 border-[#691AEA] gap-4">
+      <div className="flex border-b-2 border-blue-700 gap-4 drop-shadow-white-sm">
         <SkillIcon />
         <h2>Habilidades</h2>
       </div>
