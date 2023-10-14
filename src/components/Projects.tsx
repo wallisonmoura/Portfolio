@@ -17,7 +17,7 @@ export default async function Projects() {
     'won-games',
     'car_showcase',
     'ddd_modelagem_tatica_e_patterns',
-    'SistemaDeConsulta',
+    'sistema-de-consulta',
     'won-games-api',
     'won-games-database'
   ]
@@ -40,8 +40,8 @@ export default async function Projects() {
                 <Card containerStyle="w-full md:h-full justify-between text-white">
                   <div className="flex gap-4 items-center pl-2">
                     <FlagIcon />
-                    <p className="flex flex-wrap font-bold text-xl">
-                      {repo.name}
+                    <p className="flex flex-wrap text-left font-bold text-xl">
+                      {repo.name.replace(/[_-]/g, ' ')}
                     </p>
                   </div>
                   <p className="flex w-full text-left p-2">
