@@ -9,7 +9,7 @@ export default function XIcon() {
     >
       <path
         d="M19 1L1 19M1 1L19 19"
-        stroke="#691AEA"
+        stroke="#FFFFFF"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"

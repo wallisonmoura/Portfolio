@@ -2,19 +2,19 @@ import Image from 'next/image'
 
 const Footer = () => {
   return (
-    <footer className="border-t pb-4 flex flex-col items-center bg-slate-600">
-      {/* <div className="mt-4">
-        <h3 className="text-lg font-bold">Redes sociais</h3>
-      </div> */}
+    <footer className="flex flex-col-reverse items-center border-t pb-4 text-white md:mx-20 md:flex-row md:justify-between">
+      <div className="mt-4">
+        <p>Todos os direitos reservados © Wallison Moura 2024</p>
+      </div>
       <div className="mt-2 flex justify-center">
-        <ul className="flex space-x-2 gap-3">
-          <li className="flex items-center gap-1 hover:text-[#f8f8f8]">
+        <ul className="flex gap-3 space-x-2">
+          <li className="flex items-center gap-2 hover:text-gray-300">
             <Image
               src="/linkedin.svg"
               alt="logo linkedin"
               width={20}
               height={20}
-              className="object-contain w-auto"
+              className="w-auto object-contain"
             />
             <a
               href="https://www.linkedin.com/in/wallison-moura/"
@@ -24,13 +24,13 @@ const Footer = () => {
               Linkedin
             </a>
           </li>
-          <li className="flex items-center gap-1 hover:text-[#f8f8f8]">
+          <li className="flex items-center gap-2 hover:text-gray-300">
             <Image
               src="/github.svg"
               alt="logo linkedin"
               width={20}
               height={20}
-              className="object-contain w-auto"
+              className="w-auto object-contain"
             />
 
             <a
@@ -42,9 +42,6 @@ const Footer = () => {
             </a>
           </li>
         </ul>
-      </div>
-      <div className="mt-4">
-        <p>Todos os direitos reservados © Wallison Moura 2023</p>
       </div>
     </footer>
   )

@@ -1,51 +1,44 @@
+import { professionalExperiences } from '@/constants/experience'
+
 import { ExperienceIcon } from './icons'
 
 const Experience = () => {
   return (
     <section
       id="section-experience"
-      className="flex-col lg:h-screen gap-8 justify-center py-4 lg:pt-0"
+      className="m-auto max-w-screen-2xl text-white"
     >
-      <div className="flex border-b-2  border-blue-700 gap-4 drop-shadow-white-sm">
-        <ExperienceIcon />
-        <h2>Experiência Profissional</h2>
-      </div>
-      <div className="flex flex-col text-white bg-gradient-to-r from-blue-700 to-fuchsia-800 rounded-lg p-4 w-3/4 gap-2 drop-shadow-blue-md">
-        <div className="font-semibold">
-          <p className="text-white">
-            Desenvolvedor Full Stack Pleno na Transformatio Technology Eireli -
-            (alocado na Secretária de Defesa Social de Pernambuco)
-          </p>
-          <p className="text-gray-300">Set 2020 - Dez 2022</p>
+      <div className="mx-16 my-12 flex flex-col sm:py-10  md:space-x-4 md:py-28">
+        <div className="flex h-full w-full flex-col items-center justify-center gap-4 p-10 text-2xl font-extrabold md:text-3xl  lg:text-4xl">
+          <div className="flex gap-4 border-b-2 border-white drop-shadow-white-sm">
+            <ExperienceIcon />
+            <h2>Experiência Profissional</h2>
+          </div>
         </div>
-        <ul className="flex flex-col list-disc px-4">
-          <li>
-            Participação na criação, elaboração e desenvolvimento de novos
-            sistemas e aplicativos;
-          </li>
-          <li>
-            Colaboração com a criação dos protótipos e design dos projetos com o
-            editor gráfico figma;
-          </li>
-          <li>
-            Responsável pelo desenvolvimento de sistema web e mobile que
-            melhoraram tanto os processos policias, como a agilidade no trabalho
-            na segurança pública do estado. Utilizamos o trello onde eram
-            definidas e refinadas as tarefas da equipe. Os versionamentos dos
-            códigos através do git e o gerenciador de repositórios gitlab. A
-            comunicação dos sistemas web e o mobile era através de
-            microsserviços de vários departamentos governamentais e a
-            autenticação pelo LDAP da ATI do estado com jwt token;
-          </li>
-          <li>
-            Desenvolvimento de sistemas para substituição de sistemas legados;
-          </li>
-        </ul>
-        <p>
-          <b>Tecnologias e bibliotecas:</b> React, React Native, Typescript,
-          Styled Component, Docker, Material UI, Context Api, Zustand, REST API,
-          Axios, Micro serviços, App Center, CodePush e OpenShift;
-        </p>
+        <div className="flex flex-col gap-6">
+          {professionalExperiences.map((experience, index) => (
+            <div
+              key={index}
+              className="mb-6 space-y-4 rounded-lg bg-neutral-800 p-4 drop-shadow-blue-md"
+            >
+              <div className="flex flex-col gap-4 font-bold lg:flex-row lg:justify-between lg:gap-8">
+                <p className="flex-1 md:text-xl">
+                  {experience.position} na {experience.company}
+                </p>
+                <p className="text-gray-300 md:text-xl">{experience.period}</p>
+              </div>
+              <div>
+                <ul className="list-inside list-disc space-y-2">
+                  {experience.responsibilities.map((responsibility, idx) => (
+                    <li key={idx} className="mb-1">
+                      {responsibility}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   )

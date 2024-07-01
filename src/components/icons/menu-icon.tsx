@@ -9,7 +9,7 @@ export default function MenuIcon() {
     >
       <path
         d="M2 2H20M2 10H20M2 18H20"
-        stroke="#691AEA"
+        stroke="#FFFFFF"
         strokeWidth="2.5"
         strokeLinecap="round"
         strokeLinejoin="round"

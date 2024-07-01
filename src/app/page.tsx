@@ -1,13 +1,14 @@
-import { Contact, Experience, Home, Projects, Skills } from '@/components'
+import { About, Experience, Home, Projects, Skills } from '@/components'
 
 export default function Page() {
   return (
-    <main>
+    // <main className="mt-8 flex h-full w-full flex-col gap-12">
+    <main className="">
       <Home />
+      <About />
       <Experience />
       <Skills />
       <Projects />
-      <Contact />
     </main>
   )
 }

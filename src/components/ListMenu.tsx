@@ -1,23 +1,20 @@
+'use client'
+
+import { links } from '@/constants/links'
+
 import CustomLink from './CustomLink'
 
 const ListMenu = () => {
   return (
     <>
-      <li className="bg-gradient-to-r from-blue-700 to-fuchsia-800 py-2 px-3 rounded-lg hover:scale-110 duration-500 hover:font-extrabold hover:border cursor-pointer">
-        <CustomLink to="section-about" text="Sobre mim" />
-      </li>
-      <li className="bg-gradient-to-r from-blue-700 to-fuchsia-800 py-2 px-3 rounded-lg hover:scale-110 duration-500 hover:font-extrabold hover:border cursor-pointer">
-        <CustomLink to="section-experience" text="Experiência" />
-      </li>
-      <li className="bg-gradient-to-r from-blue-700 to-fuchsia-800 py-2 px-3 rounded-lg hover:scale-110 duration-500 hover:font-extrabold hover:border cursor-pointer">
-        <CustomLink to="section-skills" text="Habilidades" />
-      </li>
-      <li className="bg-gradient-to-r from-blue-700 to-fuchsia-800 py-2 px-3 rounded-lg hover:scale-110 duration-500 hover:font-extrabold hover:border cursor-pointer">
-        <CustomLink to="section-projects" text="Projetos" />
-      </li>
-      <li className="bg-gradient-to-r from-blue-700 to-fuchsia-800 py-2 px-3 rounded-lg hover:scale-110 duration-500 hover:font-extrabold hover:border cursor-pointer">
-        <CustomLink to="section-contact" text="Contato" />
-      </li>
+      {links.map((link) => (
+        <li
+          key={link.hash}
+          className="inset-x-0 mx-auto w-1/2 cursor-pointer rounded-full bg-gradient-to-r from-transparent via-neutral-800 to-transparent px-3 text-white shadow-2xl transition-all duration-200 hover:border-b hover:bg-neutral-800"
+        >
+          <CustomLink to={link.hash} text={link.name} />
+        </li>
+      ))}
     </>
   )
 }

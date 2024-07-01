@@ -10,7 +10,7 @@ const BurgerMenu = () => {
   const toggleMenu = () => setMenuOpen(!isMenuOpen)
 
   return (
-    <div className="md:hidden flex relative">
+    <div className="relative flex md:hidden">
       <button
         onClick={toggleMenu}
         className={`p-2 focus:outline-none ${
@@ -20,8 +20,8 @@ const BurgerMenu = () => {
         {isMenuOpen ? <XIcon /> : <MenuIcon />}
       </button>
       {isMenuOpen && (
-        <div className="fixed top-0 right-0 h-screen w-1/2 bg-black bg-opacity-90 z-10 transition-opacity">
-          <ul className="flex flex-col gap-4 pt-16 px-8 text-white">
+        <div className="fixed left-0 top-0 z-10 h-screen w-1/2 bg-black bg-opacity-90 transition-opacity">
+          <ul className="flex flex-col gap-4 px-8 pt-16 text-white">
             <ListMenu />
           </ul>
         </div>

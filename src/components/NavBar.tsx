@@ -3,8 +3,8 @@ import ListMenu from './ListMenu'
 
 const NavBar = () => {
   return (
-    <header className="fixed w-full px-9 py-4 top-0 z-10 bg-black bg-opacity-70 backdrop-filter backdrop-blur-md">
-      <nav className=" w-full flex justify-end items-center ">
+    <header className="fixed top-0 z-10 w-full bg-black bg-opacity-70 px-9 py-4 backdrop-blur-md backdrop-filter">
+      <nav className=" flex w-full items-center justify-end ">
         <div className="hidden md:flex">
           <ul className="flex gap-5 text-white">
             <ListMenu />

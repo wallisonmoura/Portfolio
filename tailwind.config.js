@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       dropShadow: {
         'white-sm': '1px 0px 1.3px rgba(255, 255, 250, 0.3)',
-        'blue-md': '0 0 10px rgba(0, 0, 255, 0.4)'
+        'blue-md': '0 0 5px rgba(255, 255, 250, 0.7)'
       }
     }
   },
