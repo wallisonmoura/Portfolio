@@ -6,37 +6,31 @@ import { Link as LinkScroll } from 'react-scroll'
 
 import { FlipWords } from './ui/flip-words'
 
+const words = [
+  'Desenvolvedor Frontend',
+  'Desenvolvedor Backend',
+  'Desenvolvedor FullStack'
+]
+
 const Home = () => {
-  const words = [
-    'Desenvolvedor-Frontend',
-    'Desenvolvedor-Backend',
-    'Desenvolvedor-FullStack'
-  ]
   return (
-    <section id="section-home" className="m-auto max-w-screen-2xl">
-      <div className="mx-16 my-12 flex flex-col items-center justify-center text-center sm:py-10 md:flex-row md:space-x-4 md:py-28 md:text-left">
-        <div className="flex justify-center md:mt-2 md:w-1/2">
-          <div className="mt-16 max-h-[21rem] max-w-[21rem] overflow-hidden rounded-full border-2 border-white shadow-2xl">
-            <Image
-              src="/perfil.jpeg"
-              alt="logo"
-              width={350}
-              height={350}
-              priority
-              className="object-cover"
-            />
+    <section id="section-home" className="section-wrapper">
+      <div className="section-content text-center lg:flex-row">
+        <div className="flex h-full justify-center px-6 md:mt-2">
+          <div className="relative h-[21rem] w-[21rem] overflow-hidden rounded-full border-2 border-white shadow-2xl">
+            <Image src="/perfil.jpeg" alt="logo" fill priority />
           </div>
         </div>
-        <div className="md:mt-2 md:w-3/5">
-          <div className="mt-6 flex flex-col space-y-6  font-bold text-neutral-200 md:mt-16 md:text-center ">
+        <div className="flex-1">
+          <div className="mt-6 flex flex-col space-y-6  font-bold text-neutral-200">
             <div>
-              <span className="text-2xl md:text-3xl">Olá, eu sou wallison</span>
-              <div className="flex w-full justify-center text-center text-2xl md:text-3xl">
+              <h1 className="text-2xl md:text-3xl">Olá, eu sou wallison</h1>
+              <div className="flex w-full justify-center text-xl md:text-2xl">
                 <FlipWords words={words} />
               </div>
             </div>
             <div>
-              <span className="text-2xl md:text-3xl">
+              <span className="text-xl md:text-2xl">
                 Sou um desenvolvedor de software versátil, dedicado a criar
                 soluções que tornam a vida das pessoas mais fácil. Se você
                 procura alguém comprometido em transformar ideias em realidade,
@@ -44,7 +38,7 @@ const Home = () => {
               </span>
             </div>
             <div className="flex items-center justify-center space-x-8 text-lg sm:text-xl">
-              <div className="flex justify-center text-center">
+              <div className="flex justify-center">
                 <Link
                   href="/cv.pdf"
                   target="_blank"

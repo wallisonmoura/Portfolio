@@ -1,14 +1,14 @@
 import { About, Experience, Home, Projects, Skills } from '@/components'
+import Base from '@/components/template/Base'
 
 export default function Page() {
   return (
-    // <main className="mt-8 flex h-full w-full flex-col gap-12">
-    <main className="">
+    <Base>
       <Home />
       <About />
       <Experience />
       <Skills />
       <Projects />
-    </main>
+    </Base>
   )
 }

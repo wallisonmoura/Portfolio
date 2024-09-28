@@ -8,10 +8,18 @@
   box-sizing: border-box;
 }
 
-
-
 @layer base {
   body {
     @apply bg-neutral-800;
+  }
+}
+
+@layer components {
+  .section-wrapper {
+    @apply m-auto flex min-h-svh max-w-screen-2xl items-center justify-center;
+  }
+
+  .section-content {
+    @apply mx-16 flex flex-1 flex-col items-center justify-center pt-28 gap-8;
   }
 }
