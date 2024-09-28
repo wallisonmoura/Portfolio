@@ -12,7 +12,7 @@ const About = () => {
           <AboutIcon />
         </Title>
         <div className="flex flex-col gap-10 lg:flex-row">
-          <div className="drop-shadow-white-md space-y-8 rounded-lg bg-neutral-800 p-4 text-center md:text-start lg:w-1/2">
+          <div className="space-y-8 rounded-lg bg-neutral-800 p-4 text-center drop-shadow-white-md md:text-start lg:w-1/2">
             <h2 className="text-xl font-semibold">Um pouco mais sobre mim:</h2>
             <div className="flex flex-col gap-4">
               {about.map((p, index) => (
@@ -22,7 +22,7 @@ const About = () => {
               ))}
             </div>
           </div>
-          <div className="drop-shadow-white-md space-y-8 rounded-lg bg-neutral-800 p-4 lg:w-1/2">
+          <div className="space-y-8 rounded-lg bg-neutral-800 p-4 drop-shadow-white-md lg:w-1/2">
             <h2 className="text-xl font-semibold">
               Em termos de competências pessoais, caracterizo-me por:
             </h2>

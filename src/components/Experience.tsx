@@ -14,7 +14,7 @@ const Experience = () => {
           {professionalExperiences.map((experience, index) => (
             <div
               key={index}
-              className="drop-shadow-white-md mb-6 space-y-4 rounded-lg bg-neutral-800 p-4"
+              className="mb-6 space-y-4 rounded-lg bg-neutral-800 p-4 drop-shadow-white-md"
             >
               <div className="flex flex-col gap-4 font-bold lg:flex-row lg:justify-between lg:gap-8">
                 <p className="flex-1 md:text-xl">
