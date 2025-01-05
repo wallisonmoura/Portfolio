@@ -24,6 +24,12 @@ import {
   TailwindIcon,
   TypescriptIcon
 } from './icons'
+import AngularIcon from './icons/angular'
+import GolangIcon from './icons/golang'
+import JavaIcon from './icons/java'
+import KafkaIcon from './icons/kafka'
+import RabbitIcon from './icons/rabbit'
+import SpringIcon from './icons/spring'
 import { Title } from './Title'
 
 const Skills = () => {
@@ -53,8 +59,24 @@ const Skills = () => {
             <p className="flex font-bold text-white">Typescript</p>
           </Card>
           <Card className="h-36 w-36 items-center justify-center">
+            <JavaIcon />
+            <p className="flex font-bold text-white">Java</p>
+          </Card>
+          <Card className="h-36 w-36 items-center justify-center">
+            <GolangIcon />
+            <p className="flex font-bold text-white">GoLang</p>
+          </Card>
+          <Card className="h-36 w-36 items-center justify-center">
             <NodeIcon />
             <p className="flex font-bold text-white">Node.js</p>
+          </Card>
+          <Card className="h-36 w-36 items-center justify-center">
+            <SpringIcon />
+            <p className="flex font-bold text-white">Spring Boot</p>
+          </Card>
+          <Card className="h-36 w-36 items-center justify-center">
+            <AngularIcon />
+            <p className="flex font-bold text-white">Angular</p>
           </Card>
           <Card className="h-36 w-36 items-center justify-center">
             <NpmIcon />
@@ -75,6 +97,14 @@ const Skills = () => {
           <Card className="h-36 w-36 items-center justify-center">
             <DockerIcon />
             <p className="flex font-bold text-white">Docker</p>
+          </Card>
+          <Card className="h-36 w-36 items-center justify-center">
+            <KafkaIcon />
+            <p className="flex font-bold text-white">Kafka</p>
+          </Card>
+          <Card className="h-36 w-36 items-center justify-center">
+            <RabbitIcon />
+            <p className="flex font-bold text-white">RabbitMQ</p>
           </Card>
           <Card className="h-36 w-36 items-center justify-center">
             <TailwindIcon />

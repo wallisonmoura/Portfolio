@@ -11,16 +11,17 @@ type RepoProps = {
 }
 
 export default async function Projects() {
-  const response = await fetch(`${process.env.NEXT_PULIC_API_GITHUB}/repos`)
+  const response = await fetch(`${process.env.NEXT_PULIC_API_GITHUB}/repos`, {
+    cache: 'no-cache'
+  })
   const repos = await response.json()
-
   const reposToRender = [
+    'sistema-de-rastreamento-de-veiculos',
     'won-games',
     'car_showcase',
     'ddd_modelagem_tatica_e_patterns',
     'sistema-de-consulta',
-    'won-games-api',
-    'won-games-database'
+    'gam3r.store'
   ]
 
   return (
